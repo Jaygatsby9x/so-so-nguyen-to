@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+<script>
+           function check(n) {
+               if (n<2) {
+                   return false
+               }
+               for (let i=2; i <=Math.sqrt(n); i++) {
+                   if (n%i == 0) {
+                       return false;
+                   }
+               }
+               return true;
+           }
+           let number = Number(prompt("number of number"));
+           let count = 0;
+           let j = 2;
+           for (;count<number;){
+               if (check(j)){
+                   document.write(+j  +"    ");
+                   count++;
+               }
+               j++;
+           }
+</script>
+</body>
+</html>
